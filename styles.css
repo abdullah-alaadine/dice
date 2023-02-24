@@ -1,4 +1,4 @@
-*{
+    *{
     padding: 0;
     margin: 0;
     font-family: atma;
@@ -22,8 +22,9 @@ body{
     align-items: center;
     height: 90vh;
 }
-.result {
+.result:not(:first-child) {
     position: absolute;
+    visibility: hidden;
     left: 42%;
     top: 5%;
 }
@@ -40,7 +41,7 @@ body{
     width: 200px;
     height: 200px;
     margin-right: 10px;
-    background-color: rgb(167, 12, 12);
+    background-color: rgb(218, 13, 13);
     border-radius: 20px;
     display: grid;
     margin: auto;
@@ -69,4 +70,10 @@ button{
     padding: 4px;
     background-color: #74a6f1;
     width: 100%;
+}
+.circles1:nth-child(2n + 1){
+    visibility: hidden;
+}
+.circles2:nth-child(2n){
+    visibility: hidden;
 }
