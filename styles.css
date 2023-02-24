@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: atma;
+}
+body{
+    color: wheat;
+    background-color: #0066ff;
+}
+.main{
+    border: 1px black solid;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+.holder{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+}
+.result {
+    position: absolute;
+    left: 41.5%;
+    top: 5%;
+}
+.dices{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.dice{
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+    background-color: rgb(167, 12, 12);
+    border-radius: 20px;
+    display: grid;
+}
+.circles {
+    height: 20%;
+    width: 20%;
+    background-color: wheat;
+    border-radius: 50%;
+}
+button{
+    color: #3083ff;
+    border: 0;
+    border-radius: 10px;
+    padding: 4px;
+    background-color: #74a6f1;
+}

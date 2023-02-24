@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Atma' rel='stylesheet'>
+    <title>Dice!</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="holder">
+            <div class="game status">
+                <h1 class="result">&#129322; Player 1 Wins!</h1>
+                <h1 class="result">Player 2 Wins! &#129322;</h1>
+            </div>
+            <div class="game dices">
+                <div>
+                    <h3>Player 1</h3>
+                    <div class="dice" id="dice1">
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Player 2</h3>
+                    <div id="dice2" class="dice">
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                        <div class="circles"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="game roll">
+                <button id="roll"> Roll the dice</button>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
