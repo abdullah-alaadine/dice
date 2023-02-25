@@ -23,7 +23,6 @@ rollingSound.src = "./sounds/dice-sound-effect_HoCT2XxU.mp3";
 rollBtn.addEventListener("mousedown", rollTheDices);
 function rollTheDices(e){
     rollBtn.removeEventListener("mousedown", rollTheDices);
-    rollingSound.pause();
     rollingSound.play();
     let x = 8;
     const interval = setInterval(() => {
