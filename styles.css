@@ -68,6 +68,11 @@ button{
     padding: 4px;
     background-color: #74a6f1;
     width: 100%;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #eef2f8;
+    transform: translateY(10px);
 }
 .circles1:nth-child(2n + 1){
     visibility: hidden;
