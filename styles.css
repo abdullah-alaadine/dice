@@ -8,7 +8,6 @@ body{
     background-color: #0066ff;
 }
 .main{
-    border: 1px black solid;
     width: 60%;
     margin: auto;
     margin-top: 20px;
@@ -26,7 +25,6 @@ body{
     position: absolute;
     visibility: hidden;
     left: 42%;
-    top: 5%;
 }
 .dices{
     width: 75%;
