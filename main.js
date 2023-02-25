@@ -13,14 +13,31 @@ const diceTwoSixthSide  = [...diceOneSecondSide, ...document.querySelectorAll(".
 const dice1 = document.getElementById("dice1");
 const dice2 = document.getElementById("dice2");
 const rollBtn = document.getElementById("roll");
+const rollingSound = document.createElement("audio");
+rollingSound.src = "./sounds/dice-sound-effect_HoCT2XxU.mp3";
 rollBtn.addEventListener("mousedown", rollTheDices);
 function rollTheDices(e){
+    rollBtn.removeEventListener("mousedown", rollTheDices);
+    rollingSound.pause();
+    rollingSound.play();
+    let x = 8;
+    const interval = setInterval(() => {
+        dice1.style.transform = `translateX(${x}px)`;
+        dice2.style.transform = `translateX(${x}px)`;
+        x *= -1;
+    }, 100);
+    setTimeout(() => {
+        clearInterval(interval);
+        rotateTheDices();
+    }, 2000)
+}
+function rotateTheDices(){
     let n = 6;
     const interval = setInterval(() => {
+        n == 1440 ? clearInterval(interval): null;
         dice1.style.rotate = `${n}deg`;
         dice2.style.rotate = `${n}deg`;
         n += 6;
     }, 6);
-    setTimeout(() => clearInterval(interval), 4320); 
+    setTimeout(() => rollBtn.addEventListener("mousedown", rollTheDices), 1440);
 }
-//720
