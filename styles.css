@@ -58,7 +58,7 @@ body{
     width: 50%;
     margin: 10px;
 }
-button{
+.roll-btn{
     font-size: 20px;
     position: relative;
     bottom: 8vh;
@@ -70,7 +70,7 @@ button{
     width: 100%;
     transition: 0.3s;
 }
-button:hover{
+.roll-btn:hover{
     background-color: #eef2f8;
     transform: translateY(10px);
 }
